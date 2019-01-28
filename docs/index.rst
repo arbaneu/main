@@ -13,12 +13,3 @@ ARBA
    Overview
    Data Preprocessing
    Data Analysis
-
-
-Indices and tables
-==================
-
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
