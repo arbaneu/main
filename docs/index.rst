@@ -10,13 +10,14 @@ Welcome to ARBA's documentation!
    :maxdepth: 3
    :caption: Contents:
 
+   Overview
+   Data Preprocessing
+   Data Analysis
 
 
 Indices and tables
 ==================
-Overview
-Data Preprocessing
-Data Analysis
+
 
 * :ref:`genindex`
 * :ref:`modindex`
