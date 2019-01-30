@@ -72,3 +72,11 @@ Inspect one frame at a time for each image for proper registration with MPRAGE, 
 
 Further Preprocessing
 ~~~~~~~~~~~~~~~~~~~~~
+Preprocessing steps following QC involve:
+
+- Frame by frame realignment for motion correction
+- Coregistration of PET and MR images with spmregister
+- Brainmasking with a FreeSurfer mask and skullstripping using aparc/aseg
+- Spatial normalization to the template space via FLIRT and FNIRT
+- Mean intensity normalization (whole brain normalization)
+- Smoothing with FWHM 8mm
