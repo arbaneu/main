@@ -55,7 +55,11 @@ To overlay the att_map onto the MPRAGE_spm.nii, navigate to Overlay > Add. Scrol
 - If the attenuation map appears completely opaque, toggle opacity by navigating to Overlay > Transparency on background, then select the desired level (e.g., 60%)
 - A good attenuation map shows nice alignment with the MPRAGE, covering the whole brain and nothing more (see below for an example)
 
-.. image:: https://github.com/arbaneu/docs/_static/att_map_good.jpg
+.. image:: /_static/att_map_good.jpg
+   :scale: 50 %
+
+.. image:: /_static/att_map_bad.jpg
+   :scale: 50 %
 
 Open the MPRAGE_spm_normalized .nii file to check that the subject’s nose and/or back of the skull aren’t cut in the FOV (this is a narrower FOV that is similar to the real PET FOV, so if the subject is cut here then the MPRAGE will be cut in the PET recon FOV)
 Overlay the PET_4D_5minframes .nii and the PET_4D_60-90frame .nii onto the MPRAGE_spm .nii, respectively
