@@ -14,3 +14,4 @@ Contents
 
    setup
    data
+   rtfd
