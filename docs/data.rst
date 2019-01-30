@@ -53,15 +53,13 @@ Start with QC on the MPRAGE. Open and scroll through the MPRAGE_spm.nii file on 
 To overlay the att_map onto the MPRAGE_spm.nii, navigate to Overlay > Add. Scroll through the image to ensure that the attenuation is good, that the noise doesn’t affect the attenuation; also check for any artifacts, signal loss, etc.
 
 - If the attenuation map appears completely opaque, toggle opacity by navigating to Overlay > Transparency on background, then select the desired level (e.g., 60%)
-- A good attenuation map shows nice alignment with the MPRAGE, covering the whole brain and nothing more (see below for an example)
+- A good attenuation map shows nice alignment with the MPRAGE, covering almost entirely the whole brain and nothing more. An example is shown on the left below. A bad attenuation map might show insufficient coverage and/or coverage of extracranial space. An example of this is shown on the right below. 
 
 .. image:: /_static/att_map_good.jpg
    :scale: 50 %
-Good (showing good alignment with MRPAGE)
 
 .. image:: /_static/att_map_bad.jpg
    :scale: 55 %
-Bad (low SNR around the chin/mouth)
 
 
 Open the MPRAGE_spm_normalized .nii file to check that the subject’s nose and/or back of the skull aren’t cut in the FOV (this is a narrower FOV that is similar to the real PET FOV, so if the subject is cut here then the MPRAGE will be cut in the PET recon FOV)
