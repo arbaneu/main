@@ -68,6 +68,8 @@ Overlay each of the PET recon images onto the MPRAGE_spm.nii. Once overlaid, cha
 
 Inspect one frame at a time for each image for proper registration with MPRAGE, appropriate tracer uptake, if the brain is cut in the PET FOV, for artifacts, motion, etc.
 
+- By clicking a "cone hat" icon in MRICron, you can toggle the visibility of overlay images. This is useful for examining the extent to which subject motion is present (i.e., misalignment with the MPRAGE) 
+
 **TO-DO**: Clarify issues regarding pseudo_AC with Baileigh
 
 Further Preprocessing
