@@ -53,7 +53,7 @@ Start with QC on the MPRAGE. Open and scroll through the MPRAGE_spm.nii file on 
 To overlay the att_map onto the MPRAGE_spm.nii, navigate to Overlay > Add. Scroll through the image to ensure that the attenuation is good, that the noise doesn’t affect the attenuation; also check for any artifacts, signal loss, etc.
 
 - If the attenuation map appears completely opaque, toggle opacity by navigating to Overlay > Transparency on background, then select the desired level (e.g., 60%)
-- A good attenuation map shows nice alignment with the MPRAGE, covering almost entirely the whole brain and nothing more. An example is shown on the left below. A bad attenuation map might show insufficient coverage and/or coverage of extracranial space. An example of this is shown on the right below. 
+- A good attenuation map shows nice alignment with the MPRAGE, covering almost entirely the whole brain and nothing more. An example is shown on the left below. A bad attenuation map might show insufficient coverage and/or coverage of extracranial space. An example of this is shown on the right below.
 
 .. image:: /_static/att_map_good.jpg
    :scale: 50 %
@@ -61,13 +61,14 @@ To overlay the att_map onto the MPRAGE_spm.nii, navigate to Overlay > Add. Scrol
 .. image:: /_static/att_map_bad.jpg
    :scale: 55 %
 
+Overlay each of the PET recon images onto the MPRAGE_spm.nii. Once overlaid, change the color scheme to ``spectrum`` so that the recon image is displayed as a heat map. Set the lower threshold to 0 and the upper threshold to an arbitrary value, such that there is a nice gradient of intensity within the brain (see below for an example).
 
-Open the MPRAGE_spm_normalized .nii file to check that the subject’s nose and/or back of the skull aren’t cut in the FOV (this is a narrower FOV that is similar to the real PET FOV, so if the subject is cut here then the MPRAGE will be cut in the PET recon FOV)
-Overlay the PET_4D_5minframes .nii and the PET_4D_60-90frame .nii onto the MPRAGE_spm .nii, respectively
-If there is more than one frame, view and QC each frame (i.e., the 5minframes .nii file will contain 6-7 frames)
-Change the intensity levels to 0 and ~1 (you can play with this to get the appropriate viewing level), and change the viewing color scheme to Spectrum
-View each frame for proper registration of PET onto MR, appropriate tracer uptake, if the brain is cut in the PET FOV, for artifacts, motion, etc
+.. image:: /_static/recon_example.png
+   :scale: 50 %
 
+Inspect one frame at a time for each image for proper registration with MPRAGE, appropriate tracer uptake, if the brain is cut in the PET FOV, for artifacts, motion, etc.
+
+**TO-DO**: Clarify issues regarding pseudo_AC with Baileigh
 
 Further Preprocessing
 ~~~~~~~~~~~~~~~~~~~~~
