@@ -1,6 +1,10 @@
 Data Processing
 ===============
 
+fMRIPrep
+--------
+`fMRIPrep <https://fmriprep.readthedocs.io/en/stable/>`_ is used to perform preprocessing of structural and functional MRI data.
+
 Resting-state fMRI
 ------------------
 
@@ -8,7 +12,7 @@ Task-related fMRI
 -----------------
 FS-FAST
 ~~~~~~~
-This section describes how to perform preprocessing and analysis of task-related fMRI data using FreeSurfer's `FSFAST<https://surfer.nmr.mgh.harvard.edu/fswiki/FsFastTutorialV6.0>`_.
+This section describes how to process task-related fMRI data using FreeSurfer's `FSFAST <https://surfer.nmr.mgh.harvard.edu/fswiki/FsFastTutorialV6.0>`_.
 
 
 
