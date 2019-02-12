@@ -5,15 +5,29 @@ fMRIPrep
 --------
 `fMRIPrep <https://fmriprep.readthedocs.io/en/stable/>`_ is used to perform preprocessing of structural and functional MRI data.
 
+Structural MRI
+--------------
+Dynamic Viewing of MPRAGE
+~~~~~~~~~~~~~~~~~~~~~~~~~
+1. If not already, source FreeSurfer 6::
+
+  source /usr/local/freesurfer/nmr-stable6-env
+
+2. 
+
+FreeSurfer recon
+~~~~~~~~~~~~~~~~
+
 Resting-state fMRI
 ------------------
 
-Task-related fMRI
------------------
-FS-FAST
-~~~~~~~
-This section describes how to process task-related fMRI data using FreeSurfer's `FSFAST <https://surfer.nmr.mgh.harvard.edu/fswiki/FsFastTutorialV6.0>`_.
+Task-related fMRI: FSFAST
+-------------------------
+This section describes how to analyze task-related fMRI data using FreeSurfer's `FSFAST <https://surfer.nmr.mgh.harvard.edu/fswiki/FsFastTutorialV6.0>`_, assuming that all preprocessing up to spatial normalization has been completed in fMRIPrep following the steps described above.
 
+Getting Started
+~~~~~~~~~~~~~~~
+There shouldn't be anything that you need to configure beyond what is already available on the MGH cluster. Therefore, the first step is to organize the preprocessed image (output from fMRIPrep) in the structure readable by FSFAST.
 
 
 PET
